@@ -1,5 +1,7 @@
 {
   "name": "auth",
+  "title": "Authentication",
   "description": "Authentication block for Nuxt 3",
+  "version": "0.1.0",
   "status": "in-development"
 }

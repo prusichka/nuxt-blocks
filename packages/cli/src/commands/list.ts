@@ -12,6 +12,8 @@ export async function listBlocks() {
     consola.info('Available blocks:')
 
     for (const block of blocks) {
-        consola.info(`• ${block}`)
+        consola.info(`• ${block.name}`)
+        consola.info(`  ${block.description}`)
+        consola.info(`  Status: ${block.status}`)
     }
 }

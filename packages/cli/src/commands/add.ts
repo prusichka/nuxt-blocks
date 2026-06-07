@@ -16,7 +16,7 @@ export async function addBlock(block: string) {
         const blocks = await getAvailableBlocks()
 
         for (const item of blocks) {
-            consola.info(`- ${item}`)
+            consola.info(`- ${item.name}: ${item.description}`)
         }
 
         return
