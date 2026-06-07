@@ -1,0 +1,21 @@
+{
+  "name": "nuxt-blocks",
+  "version": "0.0.1",
+  "type": "module",
+  "bin": {
+    "nuxt-blocks": "./dist/index.js"
+  },
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "cac": "^6.7.14",
+    "consola": "^3.4.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  }
+}
