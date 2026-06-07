@@ -18,7 +18,9 @@ export function getBlockFilesDir(block: string) {
 }
 
 export async function getAvailableBlocks() {
-    return fs.readdir(getBlocksDir())
+    const blocks = await fs.readdir(getBlocksDir())
+
+    return blocks.filter(block => !block.startsWith('.'))
 }
 
 export async function blockExists(block: string) {
